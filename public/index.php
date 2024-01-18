@@ -36,12 +36,13 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 
 require __DIR__.'/../vendor/autoload.php';
 
-if(DB::connection()->getDatabaseName())
-{
-    echo "Connected to database ".DB::connection()->getDatabaseName();
-}
-$response->send();
+//if(DB::connection()->getDatabaseName())
+//{
+//    echo "Connected to database ".DB::connection()->getDatabaseName();
+//}
+//$response->send();
 
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -54,7 +55,7 @@ $response->send();
 |
 */
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+
 
 $kernel = $app->make(Kernel::class);
 

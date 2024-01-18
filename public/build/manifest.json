@@ -8,5 +8,10 @@
     "file": "assets/app-f4463062.js",
     "isEntry": true,
     "src": "resources/js/app.js"
+  },
+    "resources/js/script.js": {
+    "file": "resources/js/app.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
   }
 }

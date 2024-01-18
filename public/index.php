@@ -23,12 +23,6 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
     require $maintenance;
 }
 
-if(DB::connection()->getDatabaseName())
-{
-    echo "Connected to database ".DB::connection()->getDatabaseName();
-}
-$response->send();
-
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -41,6 +35,13 @@ $response->send();
 */
 
 require __DIR__.'/../vendor/autoload.php';
+
+if(DB::connection()->getDatabaseName())
+{
+    echo "Connected to database ".DB::connection()->getDatabaseName();
+}
+$response->send();
+
 
 /*
 |--------------------------------------------------------------------------

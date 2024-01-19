@@ -22,7 +22,7 @@
               </div>
               <!-- Image -->
               <div class="md:w-2/3 lg:w-2/3 rounded-full mt-0">
-                  <img src="{{ asset('images/heroimage-022-01.png') }}" alt="heroimages">
+                  <img src="{{ asset('images/heroImage-022-01.png') }}" alt="heroimages">
               </div>
           </div>
       </section>

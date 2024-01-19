@@ -32,7 +32,7 @@ class ProductResource extends Resource
                     ->afterStateUpdated(function(Closure $set, $state) {
                         $set('slug', Str::slug($state));
                     }),
-                Forms\Components\TextInput::make('slug')
+                Forms\Components\TextInput::make('product_slug')
                     ->required()
                     ->maxLength(2048),
                 Forms\Components\Select::make('categories')

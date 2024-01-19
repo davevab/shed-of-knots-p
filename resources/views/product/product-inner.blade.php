@@ -27,8 +27,8 @@
 
                     <button x-data x-on:click="$dispatch('open-modal', { name: 'underDev' })" class="mt-6 p-3 px-6  text-white bg-darkGrayish rounded-full baseline md:block hover:bg-darkerBrownish">Checkout</button>
                 </div>
-{{--                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded bg-darkBrownish bg-opacity-50 block" src="/storage/{{$product->Image}}">--}}
-                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded bg-darkBrownish bg-opacity-50 block" src="{{ asset('images/benifits.jpg') }}">
+                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded bg-darkBrownish bg-opacity-50 block" src="'/storage/{{$product->Image}}">
+{{--                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded bg-darkBrownish bg-opacity-50 block" src="{{ asset('images/benifits.jpg') }}">--}}
             </div>
         </div>
     </section>

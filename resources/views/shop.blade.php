@@ -1,19 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
-{{--    <div class="relative container mx-auto 2xl:mx-auto 2xl:container sm:px-6 xl:px-20 2xl:px-0 w-full">--}}
-{{--        <div class="flex flex-col justify-center items-center space-y-6 space-x-6">--}}
-{{--            <div class="flex flex-col lg:items-center md:items-start py-8">--}}
-{{--                <p class="font-bold text-darkerBrownish text-5xl">--}}
-{{--                    Macramé Selections--}}
-{{--                </p>--}}
-{{--                <p class="text-lg text-darkerBrownish">--}}
-{{--                    From our Hands to Your Home--}}
-{{--                </p>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
     <section style="background-image: url('images/cta_bg.jpg')">
         <!-- Text Header -->
         <header class="w-full container mx-auto p-6">

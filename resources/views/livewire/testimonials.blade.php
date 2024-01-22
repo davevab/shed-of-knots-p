@@ -8,7 +8,7 @@
             @foreach($testimonials as $testimonial)
                 <div class="item">
                     <div class="flex-col max-w-[900px] m-auto items-center p-6 space-y-6 rounded-lg">
-                        <img src="{{ $testimonial->avatar }}" alt="" />
+                        <img src="{{ $testimonial->avatar }}" alt="Client Avatar" />
                         <h5 class="text-lg font-bold text-darkerBrownish">{{ $testimonial->name }}</h5>
                         <p class="text-sm text-darkBrownish">
                             {{ $testimonial->testimonial }}

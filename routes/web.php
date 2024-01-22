@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\CheckoutController;
-use App\Http\Controllers\CommonController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SiteController;
 use App\Http\Livewire\ContactForm;
@@ -35,9 +34,6 @@ Route::get('/contact', ContactForm::class)->name('contact');
 
 Route::get('/shop', [ProductController::class, 'index'])->name('shop');
 Route::get('/shop/category/{category:slug}', [ProductController::class, 'productCategory'])->name('product-category');
-//Route::post('/checkout', [ProductController::class, 'checkout'])->name('checkout');
-//Route::post('/success', [ProductController::class, 'success'])->name('checkout.success');
-//Route::post('/cancel', [ProductController::class, 'cancel'])->name('checkout.cancel');
 
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');

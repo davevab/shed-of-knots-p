@@ -51,11 +51,11 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser
 
     public function canAccessFilament(): bool
     {
-        return true;
+        return $this->email === 'salardave984@gmail.com';
     }
 
     public function canAccessPanel(): bool
     {
-       return true;
+       return $this->email === 'salardave984@gmail.com';
     }
 }

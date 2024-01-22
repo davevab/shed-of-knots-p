@@ -42,7 +42,10 @@ class ProductController extends Controller
             ->orderBy('published_at', 'desc')
             ->paginate(10);
 
-        return view('shop', compact('products'));
+        // Fetch all categories - adjust the query based on your actual category model
+        $categories = Category::all();
+
+        return view('shop', compact('products', 'categories'));
     }
 
     public function show(Product $product): \Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|Factory|Application

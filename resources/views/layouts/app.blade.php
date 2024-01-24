@@ -22,13 +22,13 @@
 </head>
 <body class="bg-bodyBg">
 <!-- Navbar Section Start -->
-<nav class="relative container mx-auto p-6 border-b border-b-darkGrayish">
+<nav class="relative container mx-auto p-3 border-b border-b-darkGrayish">
     <!-- Flex Container -->
     <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="">
             <a href="/">
-                <img src="{{ asset('images/SOK-logo-02.svg') }}" alt="Logo" class="w-[180px]">
+                <img src="{{ asset('images/logoo.svg') }}" alt="Logo" class="w-[270px]">
             </a>
         </div>
         <!-- Menu Items -->
@@ -54,7 +54,7 @@
                     <div class="">
                         <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" class="flex items-center pe-1 font-bold rounded-full text-darkGrayish hover:text-darkerBrownish md:me-0 pt-2.5" type="button">
                             <span class="sr-only">Open user menu</span>
-                            <img class="w-8 h-8 me-2 rounded-full" src="{{ asset('images/unisex-avatar.jpg') }}" alt="user photo">
+                            <img class="w-8 h-8 me-2 rounded-full" src="{{ asset('images/unisex-avatar.jpg') }}" alt="Profile Avatar">
                             @auth
                                 {{auth()->user()->name}}
                             @endauth

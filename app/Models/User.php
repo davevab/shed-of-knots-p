@@ -49,6 +49,11 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser
         'email_verified_at' => 'datetime',
     ];
 
+//    public function avatarUrl()
+//    {
+//        return 'https://gravatar.com/avatar/'.md5(strtolower(trim('salardave984@gmail.com')));
+//    }
+
     public function canAccessFilament(): bool
     {
         return $this->email === 'salardave984@gmail.com';

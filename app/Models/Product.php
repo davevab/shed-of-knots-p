@@ -31,14 +31,14 @@ class Product extends Model
         return $this->belongsToMany(Category::class);
     }
 
-//    public function Image()
-//    {
-//        if (str_starts_with($this->Image(), 'http')) {
-//            return $this->Image();
-//        }
-//
-//        return '/storage/'.$this->Image();
-//    }
+    public function image()
+    {
+        if (str_starts_with($this->image(), 'http')) {
+            return $this->image();
+        }
+
+        return '/storage/'.$this->image();
+    }
 
 
 }
